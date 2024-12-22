@@ -7,7 +7,7 @@ body {
 
 /* Section en-tête */
 .header {
-    background-image: url('path/to/your/header-image.jpg');
+    background-image: url('assets/images/arriere-plan/image-background-bienvenue.jpg');
     background-size: cover;
     background-position: center;
     height: 50vh;
@@ -48,6 +48,27 @@ section {
 /* Cartes de projets */
 .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section des petites annonces */ 
+.announcements { 
+    background-color: #74b8fd; 
+} 
+
+.announcement-text { 
+    font-size: 1.20rem; 
+    color: #333; 
+    padding: 20px; 
+}
+
+/* Section des dons */ 
+.donations { 
+    background-color: #f8f9fa; 
+} 
+
+.donations form { 
+    max-width: 500px; 
+    margin: 0 auto; 
 }
 
 /* Footer */
