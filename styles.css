@@ -5,6 +5,10 @@ body {
     line-height: 1.6;
 }
 
+nav {
+    min-height: 20vh;
+}
+
 /* Section en-tête */
 .header {
     background-image: url('assets/images/arriere-plan/image-background-bienvenue.jpg');
@@ -39,10 +43,21 @@ section {
     background-color: #343a40 !important;
 }
 
+.section-title {
+    font-size: 2,5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+
+}
+
 /* Images responsives */
 .img-fluid {
     max-width: 100%;
     height: auto;
+}
+
+.lead {
+    text-align: justify;
 }
 
 /* Cartes de projets */
@@ -97,4 +112,39 @@ section {
 footer {
     background-color: #343a40;
     color: #fff;
+    min-height: 30vh;
+}
+
+/* media queries */
+@media (max-width: 768px) {
+    body {
+        line-height: 1.3;
+    }
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .header p {
+        font-size: 1.0rem;
+    }
+
+    .announcements-body { 
+        height: 20vh;
+    }
+
+    .announcement-text { 
+        font-size: 1.25rem; 
+    }
+
+    .donations-image {
+        height: 50vh;
+    }
+    .section-title {
+        font-size: 1.75rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        font-weight: 700 ;
+        color:#007bff;
+    }
 }
