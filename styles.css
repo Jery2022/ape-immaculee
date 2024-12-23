@@ -52,7 +52,21 @@ section {
 
 /* Section des petites annonces */ 
 .announcements { 
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} 
+
+.announcements-body { 
     background-color: #74b8fd; 
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: center;
 } 
 
 .announcement-text { 
@@ -69,6 +83,14 @@ section {
 .donations form { 
     max-width: 500px; 
     margin: 0 auto; 
+}
+
+/* Arrière plan sous-section donations */
+.donations-image {
+    background-image: url('assets/images/arriere-plan/image-ados-plage.png');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
 }
 
 /* Footer */

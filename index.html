@@ -47,13 +47,55 @@
         </div>
     </header>
 
+    <!-- Petites Annonces Section --> 
+    <section class="announcements bg-light" id="announcements" class="py-5 "> 
+        <div class="container-fluid"> 
+            <h2 class="text-center">Petites Annonces</h2> 
+            <div class="container-fluid announcements-body mt-5">
+                <div id="carouselAnnouncements" class="carousel slide" data-bs-ride="carousel"> 
+                    <div class="carousel-inner"> 
+                        <div class="container-fluid px-5">
+                            <div class="carousel-item active"> 
+                                <p class="announcement-text">Annonce 1 : Réunion des parents le 12 janvier 2025.</p> 
+                            </div> 
+                            <div class="carousel-item"> 
+                                <p class="announcement-text">Annonce 2 : Collecte de fonds pour la bibliothèque le 18 janvier 2025.</p> 
+                            </div> 
+                            <div class="carousel-item"> 
+                                <p class="announcement-text">Annonce 3 : Excursion scolaire au musée le 25 janvier 2025.</p> 
+                            </div> 
+                        </div>
+                    </div> 
+                    <button class="carousel-control-prev" type="button" 
+                        data-bs-target="#carouselAnnouncements" data-bs-slide="prev"> 
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span> 
+                        <span class="visually-hidden">Précédent</span> 
+                    </button> 
+                    <button class="carousel-control-next" type="button" 
+                        data-bs-target="#carouselAnnouncements" data-bs-slide="next"> 
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span> 
+                        <span class="visually-hidden">Suivant</span> 
+                    </button> 
+                </div> 
+            </div>
+        </div> 
+    </section>
+
     <!-- About Section -->
-    <section id="about" class="py-5">
-        <div class="container-fluid px-5">
-            <div class="row">
+    <section id="about">
+        <div class="container-fluid bg-white px-5">
+            <div class="row pt-5">
                 <div class="col-lg-6">
-                    <h2>À propos de nous</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer neque libero, pulvinar et elementum quis, facilisis eu ante.</p>
+                    <h2>A propos de nous</h2>
+                    <p class="lead text-justify">
+                        Bienvenue à l'Association des Parents d'Élèves du Lycée [Nom du Lycée]. Notre mission principale est de soutenir l'éducation des élèves, veiller aux meilleures conditions d'apprentissage et accompagner la gouvernance de l'établissement scolaire par le biais des meilleures pratiques managériales.
+                        Nous offrons des initiatives pour enrichir l'expérience éducative, telles que des séances de tutorat et de soutien scolaire, ainsi que des activités extra-scolaires. Nous croyons que chaque élève mérite une éducation de qualité qui favorise son développement intégral.
+                        Nous nous engageons à améliorer les infrastructures du lycée en organisant des campagnes de collecte de fonds pour financer des projets de rénovation et l'achat de matériel pédagogique. Nous assurons également un suivi rigoureux des conditions d'hygiène et de sécurité pour garantir un environnement sain et sécurisé.
+                        Nous participons activement aux instances de gouvernance de l'école, apportant notre expertise pour améliorer la qualité de l'enseignement. Nous organisons également des forums de discussion et des ateliers de formation sur les meilleures pratiques de gestion scolaire pour les membres du personnel administratif et les enseignants.
+                        Nous croyons en la coopération entre les parents, les enseignants et les élèves pour créer un climat scolaire harmonieux. Nous organisons des événements communautaires, tels que des fêtes scolaires et des journées portes ouvertes, pour renforcer les liens au sein de la communauté scolaire.
+                        En conclusion, l'Association des Parents d'Élèves du Lycée [Nom du Lycée] s'engage à créer un environnement scolaire propice à l'épanouissement et à la réussite de chaque élève. Nous invitons tous les parents à rejoindre notre association et à participer activement à la vie de l'établissement.
+                        Merci de votre soutien !
+                        Madame ELLA,  Président de l'Association des Parents d'Élèves Lycée.</p>
                 </div>
                 <div class="col-lg-6">
                     <img src="assets/images/photos-bureau/image-bureau-assoc1.jpeg" alt="APE-Immaculée-président" class="img-fluid rounded">
@@ -128,40 +170,8 @@
         </div>
     </section>
 
-    <!-- Petites Annonces Section --> 
-     <section class="announcements" id="announcements" class="py-5 "> 
-        <div class="container-fluid px-1"> 
-            <h2 class="text-center">Petites Annonces</h2> 
-            <div id="carouselAnnouncements" class="carousel slide" data-bs-ride="carousel"> 
-                <div class="carousel-inner"> 
-                    <div class="container px-5">
-                        <div class="carousel-item active"> 
-                            <p class="announcement-text">Annonce 1 : Réunion des parents le 12 janvier 2025.</p> 
-                        </div> 
-                        <div class="carousel-item"> 
-                            <p class="announcement-text">Annonce 2 : Collecte de fonds pour la bibliothèque le 18 janvier 2025.</p> 
-                        </div> 
-                        <div class="carousel-item"> 
-                            <p class="announcement-text">Annonce 3 : Excursion scolaire au musée le 25 janvier 2025.</p> 
-                        </div> 
-                    </div>
-                </div> 
-                <button class="carousel-control-prev" type="button" 
-                    data-bs-target="#carouselAnnouncements" data-bs-slide="prev"> 
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span> 
-                    <span class="visually-hidden">Précédent</span> 
-                </button> 
-                <button class="carousel-control-next" type="button" 
-                    data-bs-target="#carouselAnnouncements" data-bs-slide="next"> 
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span> 
-                    <span class="visually-hidden">Suivant</span> 
-                </button> 
-            </div> 
-        </div> 
-    </section>
-
     <!-- Projects Section -->
-    <section id="projects" class="bg-light py-5">
+    <section id="projects" class="bg-white py-5">
         <div class="container-fluid px-5">
             <h2 class="text-center">Nos Projets</h2>
             <div class="row">
@@ -198,31 +208,47 @@
 
     <!-- Donations Section --> 
     <section class="donations" id="donations" class="bg-light py-5"> 
-        <div class="container"> 
-            <h2 class="text-center">Soutenez nos Actions</h2> 
-            <p class="text-center">Votre contribution aide à financer nos projets et à améliorer la vie scolaire de nos enfants.</p> 
-            <div class="text-center"> 
-                <form class="donationForm" id="donationForm"> 
-                    <div class="mb-3"> 
-                        <label for="donorName" class="form-label">Nom</label> 
-                        <input type="text" class="form-control" id="donorName" required> 
-                    </div> 
-                    <div class="mb-3"> 
-                        <label for="donorEmail" class="form-label">Téléphone</label> 
-                        <input type="email" class="form-control" id="donorEmail" required> 
-                    </div> 
-                    <div class="mb-3"> 
-                        <label for="donationAmount" class="form-label">Montant du Don</label> 
-                        <input type="number" class="form-control" id="donationAmount" required> 
-                    </div> 
-                    <button type="submit" class="btn btn-primary">Faire un Don</button> 
-                </form> 
+        <div class="donations-image bg-primary text-white text-center 
+            d-flex flex-column justify-content-center align-items-center py-5">
+            <div class="container">
+                <h1 class="fw-bold fs-1 text-center">Soutenez nos Actions</h1> 
+                <p class="lead text-center">Votre contribution aide à financer nos projets et à améliorer la vie scolaire de nos enfants.</p> 
+                <button type="button" class="btn btn-outline-primary btn-lg mt-3" data-bs-toggle="modal" 
+                    data-bs-target="#donModal" data-bs-whatever="@mdo">Faire un Don</button>
+            </div>
+        </div>
+        <div class="modal fade" id="donModal" tabindex="-1" aria-labelledby="donModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                  <h1 class="modal-title fs-5" id="donModalLabel">Je fais un Don</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="donationForm" id="donationForm"> 
+                        <div class="mb-3 text-left"> 
+                            <label for="donorName" class="form-label">Nom</label> 
+                            <input type="text" class="form-control" id="donorName" required> 
+                        </div> 
+                        <div class="mb-3 text-left"> 
+                            <label for="donorEmail" class="form-label">Téléphone</label> 
+                            <input type="email" class="form-control" id="donorEmail" required> 
+                        </div> 
+                        <div class="mb-3 text-left"> 
+                            <label for="donationAmount" class="form-label">Montant du Don</label> 
+                            <input type="number" class="form-control" id="donationAmount" required> 
+                        </div> 
+                    </form> 
             </div> 
-    </div> 
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger btn-lg" data-bs-dismiss="modal">Annuler</button>
+                <button type="button" class="btn btn-primary btn-lg">Je donne</button>
+            </div>
+        </div> 
 </section>
     
     <!-- Contact Section -->
-    <section id="contact" class="py-5">
+    <section id="contact" class="bg-light py-5">
         <div class="container">
             <h2 class="text-center">Contactez-nous</h2>
             <form>

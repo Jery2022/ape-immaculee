@@ -1,4 +1,4 @@
-// scripts.js
+// Tous mes scripts JavaScript pour le site 
 
 document.addEventListener('DOMContentLoaded', function() {
     // Code JavaScript pour des interactions dynamiques
@@ -12,3 +12,12 @@ document.addEventListener('DOMContentLoaded', function() {
         alert('Formulaire soumis avec succès');
     });
 });
+
+
+// script JS pour la gestion des Modal
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
