@@ -44,9 +44,11 @@ section {
 }
 
 .section-title {
-    font-size: 2,5rem;
-    margin-bottom: 0.5rem;
+    font-size: 2,75rem;
     text-align: center;
+    color: #513ff0; 
+    font-weight: 900;
+    margin: 2.5rem auto;
 
 }
 
@@ -149,10 +151,9 @@ footer {
     }
     .section-title {
         font-size: 1.75rem;
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
+        margin: 1.5rem auto;
         text-align: center;
         font-weight: 700 ;
-        color:#007bff;
+        color: #513ff0;
     }
 }
