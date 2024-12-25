@@ -53,21 +53,45 @@ section {
 
 }
 
+/* Section des petites annonces */ 
+
+.announcement-text { 
+    font-size: 1.20rem; 
+    color: #333; 
+    padding: 20px; 
+}
+
+.carousel-item img {
+    height: 30vh;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.05);
+  /*  color: #fff; */
+    padding: 10px;
+}
+
 /* Images responsives */
 .img-fluid {
     max-width: 100%;
-    height: auto;
+    background-size: cover;
+    height: 250px;
+   /* object-fit: cover;*/
 }
 
 .lead {
     text-align: justify;
 }
 
+.card {
+    height: auto;
+}
+
 /* Cartes de projets */
 .card-projet {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-   
-
+    height: max-content;
 }
 
 .card-projet:hover {
@@ -76,30 +100,22 @@ section {
     z-index: 1;
 }
 
-/* Section des petites annonces */ 
-.announcements { 
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-} 
-
-.announcements-body { 
-    background-color: #74b8fd; 
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    text-align: center;
-} 
-
-.announcement-text { 
-    font-size: 1.20rem; 
-    color: #333; 
-    padding: 20px; 
+.badge {
+    position: absolute;
+    top: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgba(red, green, blue, alpha);
 }
+
+.left-badge {
+    left: 10px;
+}
+
+.right-badge {
+    right: 10px;
+}
+
 
 /* Section des dons */ 
 .donations { 
@@ -116,6 +132,7 @@ section {
     background-image: url('assets/images/arriere-plan/image-ados-plage.png');
     background-size: cover;
     background-position: center;
+    width: 100%;
     height: 80vh;
 }
 
