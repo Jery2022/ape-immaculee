@@ -53,6 +53,11 @@ section {
 
 }
 
+.text-apropos {
+    width: 100%;
+    height:fit-content;
+}
+
 /* Section des petites annonces */ 
 
 .announcement-text { 
@@ -62,28 +67,36 @@ section {
 }
 
 .carousel-item img {
-    height: 30vh;
+    height: 50vh;
     object-fit: cover;
 }
 
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.05);
-  /*  color: #fff; */
     padding: 10px;
 }
 
 /* Images responsives */
 .img-fluid {
     max-width: 100%;
-    background-size: cover;
-    height: 250px;
-   /* object-fit: cover;*/
+    max-height: 250px;
+    object-fit: cover;
 }
+
+.img-fluid-bureau {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+}
+
+/* Texte de présentation */
 
 .lead {
     text-align: justify;
+    text-wrap: wrap;
 }
 
+/* cards */
 .card {
     height: auto;
 }
@@ -99,6 +112,8 @@ section {
     transition: 0.3s ease-in-out;
     z-index: 1;
 }
+
+/* badges */
 
 .badge {
     position: absolute;
@@ -160,6 +175,26 @@ section {
     color: #513ff0;
 }
 
+/* Texte annonce avec effet de lueur néon rose */
+
+.glow {
+    font-family: cursive, sans-serif;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  } 
+
 /* Footer */
 footer {
     background-image: url('assets/images/arriere-plan/image-background-section.jpg');
@@ -188,13 +223,41 @@ footer {
         font-size: 1.0rem;
     }
 
-    .announcements-body { 
-        height: 20vh;
+    .img-fluid-bureau {
+        max-width: 100%;
+        max-height: 250px;
+        object-fit: cover;
     }
 
     .announcement-text { 
         font-size: 1.25rem; 
     }
+
+    .carousel-inner {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    background: #007bff;
+    }
+
+    .carousel-item {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+ }
+
+
+
+    .carousel-item img {
+      height: 60vh; 
+      background-size: cover;
+    }
+    
 
     .donations-image {
         height: 50vh;
