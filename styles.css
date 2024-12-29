@@ -15,7 +15,7 @@ nav {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 50vh;
+    height: 60vh;
 }
 
 .header h1 {
@@ -185,6 +185,8 @@ section {
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: glow 1s ease-in-out infinite alternate;
   }
+
+  
   
   @keyframes glow {
     from {
@@ -194,6 +196,99 @@ section {
       text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
   } 
+
+/* Sous-section de la vision de l'Association */
+  .image-container-vision {
+    background-image: url("assets/images/arriere-plan/image-lyceens1.jpg"); /* The image used - important! */
+    background-size: cover;
+    position: relative; /* Needed to position the cutout text in the middle of the image */
+    height: 300px; /* Some height */
+  }
+  
+  .text-vision {
+    background-color: rgb(129, 128, 128);
+    color:black ;
+    font-size: 2vw; /* Responsive font size */
+    font-weight: bold;
+    margin: 0 auto; /* Center the text container */
+    padding: 3px;
+    width: 95%;
+    text-align: center; /* Center text */
+    position: absolute; /* Position text */
+    top: 50%; /* Position text in the middle */
+    left: 50%; /* Position text in the middle */
+    transform: translate(-50%, -50%); /* Position text in the middle */
+    mix-blend-mode: screen; /* This makes the cutout text possible */
+  }
+
+  /* Sous-section valeurs de l'Association */
+  .image-container-valeurs {
+    background-image: url("assets/images/arriere-plan/image-bg-bleu.png"); /* The image used - important! */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .box-valeur {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+    background-color: #005194;
+    border: 1px solid #0d6efd;
+    border-radius: 10px;
+   /* color:whitesmoke ;
+    font-size: 1.3vw; Responsive font size */
+    font-weight: bold;
+    margin: 5px auto;  
+    padding: 5px 10px;
+    width: 100%;
+    text-align:right;  
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);;
+  }
+
+  .icone-engagement {
+    background-image: url('assets/icones/icone-engagement.png');
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+  }
+
+  .icone-respect {
+    background-image: url('assets/icones/icone-respects02.png');
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+  }
+
+  .icone-transparence {
+    background-image: url('assets/icones/icone-transparence02.png');
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+  }
+
+  .icone-collaboration {
+    background-image: url('assets/icones/icone-collabo02.png');
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+  }
+
 
 /* Footer */
 footer {
@@ -227,6 +322,13 @@ footer {
         max-width: 100%;
         max-height: 250px;
         object-fit: cover;
+    }
+
+    .img-fluid-mot-presidente {
+        width: 100%;
+        max-height: 50vh;
+        object-fit: cover;
+        margin: 0 auto;
     }
 
     .announcement-text { 
@@ -269,4 +371,48 @@ footer {
         font-weight: 700 ;
         color: #513ff0;
     }
+
+    .text-vision {
+        background-color: rgb(129, 128, 128);
+        color:black ;
+        font-size: 5vw; /* Responsive font size */
+        font-weight: bold;
+        margin: 0 auto; /* Center the text container */
+        padding: 3px;
+        width: 95%;
+        text-align: center; /* Center text */
+        position: absolute; /* Position text */
+        top: 40%; /* Position text in the middle */
+        left: 50%; /* Position text in the middle */
+        transform: translate(-50%, -50%); /* Position text in the middle */
+        mix-blend-mode: screen; /* This makes the cutout text possible */
+      }
+
+      .image-container-valeurs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+      }
+
+      .box-valeur {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;    
+        background-color: #005194;
+        border: 1px solid #0d6efd;
+        border-radius: 10px;
+       /* color:whitesmoke ; */
+        font-size: 4vw; /* Responsive font size */
+        font-weight: bold;
+        margin: 10px auto; /* Center the text container */
+        padding: 10px; 
+        width: 60vw;
+        text-align:right; /* Center text */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);;
+      }
 }

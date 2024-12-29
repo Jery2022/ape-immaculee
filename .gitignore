@@ -21,3 +21,13 @@ node_modules/
 dist/
 build/
 
+# Ignorer les fichiers de sauvegarde
+*.bak
+
+# Ignorer les fichiers de cache
+.cache/
+
+# Ignorer les fichiers de github
+.github/
+
+
