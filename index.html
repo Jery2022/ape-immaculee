@@ -99,11 +99,11 @@
             <div class="card px-5 py-5">
                     <h2 class="section-title">Mot de la Présidente</h2>
                     <div class="mt-5">
-                        <div class="container-fluid d-flex justify-content-center align-items-center">
+                        <div class="container d-flex justify-content-center align-items-center">
                             <img src="assets/images/photos-bureau/image-Presidente.jpeg"  alt="photo présidente" alt="APE-Immaculée-président" 
                                 class="img-fluid-mot-presidente rounded">
                         </div>
-                        <div class="container-fluid mt-5">
+                        <div class="container mt-5">
                             <p class="lead lh-sm mt-5 text-apropos">
                                 Bienvenue à l'Association des Parents d'Élèves de l'Institut Immaculée Conception. Notre mission principale est de soutenir l'éducation des élèves, veiller aux meilleures conditions d'apprentissage et accompagner la gouvernance de cet établissement scolaire par le biais des meilleures pratiques managériales.  <br /><br />
                                 Nous offrons des initiatives pour enrichir l'expérience éducative ...</p>
@@ -272,21 +272,19 @@
 
     <!-- Donations Section --> 
     <section class="donations" id="donations" class="bg-light py-1"> 
-        <div class="donations-image bg-primary text-white text-center 
-            d-flex flex-column justify-content-center align-items-center py-5">
-            <div class="container">
-                <h1 class="fw-bold fs-1 text-center">Soutenez nos Actions</h1> 
-                <p class="lead text-center">Votre contribution aide à financer nos projets et à améliorer la vie scolaire de nos enfants.</p> 
-                <button type="button" class="btn btn-outline-primary btn-lg mt-3" data-bs-toggle="modal" 
-                    data-bs-target="#donModal" data-bs-whatever="@mdo">Faire un Don</button>
-            </div>
+    <div class="donations-image bg-primary text-white text-center d-flex flex-column justify-content-center align-items-center py-5">
+        <div class="container">
+            <h1 class="fw-bold fs-1 text-center">Soutenez nos Actions</h1> 
+            <p class="lead text-center">Votre contribution aide à financer nos projets et à améliorer la vie scolaire de nos enfants.</p> 
+            <button type="button" class="btn btn-outline-primary btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#donModal">Faire un Don</button>
         </div>
-        <div class="modal fade" id="donModal" tabindex="-1" aria-labelledby="donModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
+    </div>
+    <div class="modal fade" id="donModal" tabindex="-1" aria-labelledby="donModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
                 <div class="modal-header bg-primary text-white">
-                  <h1 class="modal-title fs-5" id="donModalLabel">Je fais un Don</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h1 class="modal-title fs-5" id="donModalLabel">Je fais un Don</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form class="donationForm" id="donationForm"> 
@@ -302,13 +300,15 @@
                             <label for="donationAmount" class="form-label">Montant du Don</label> 
                             <input type="number" class="form-control" id="donationAmount" required> 
                         </div> 
+                        <button type="button" class="btn btn-primary btn-lg" onclick="submitForm()">Je donne</button>
                     </form> 
+                </div> 
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-lg" data-bs-dismiss="modal">Annuler</button>
+                </div>
             </div> 
-            <div class="modal-footer">
-                <button type="submit" class="btn btn-danger btn-lg" data-bs-dismiss="modal">Annuler</button>
-                <button type="submit" class="btn btn-primary btn-lg">Je donne</button>
-            </div>
         </div> 
+    </div>
 </section>
     
     <!-- Contact Section -->
@@ -321,15 +321,18 @@
                     <div class="col-md-6 mb-3">
                         <label for="user_name" class="form-label">Nom</label>
                         <input type="text" class="form-control" id="user_name" name="user_name" required>
+                        <div id="user_name_error" class="error-message"></div>
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="user_email" class="form-label">Email</label>
                         <input type="email" class="form-control" id="user_email" name="user_email" required>
+                        <div id="user_email_error" class="error-message"></div>
                     </div>
                 </div>
                 <div class="mb-3">
                     <label for="message" class="form-label">Message</label>
                     <textarea class="form-control" id="message" rows="5" name="message" required></textarea>
+                    <div id="message_error" class="error-message"></div>
                 </div>
                 <button type="submit" value="Send" class="btn btn-primary">Envoyer</button>
             </form>
